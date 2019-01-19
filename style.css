@@ -1,0 +1,43 @@
+.img-show-parent .image_show-one,.image_show-two{
+    margin:5px;
+
+    display: flex;
+    flex-flow: row wrap;
+    direction: rtl;
+  
+}
+.img-show-parent .image_show_item{
+    flex: auto;
+    width: 200px;
+    margin: 5px;
+    
+}
+.img-show-parent .image_show_item img {
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:400px){
+.img-show-parent .image_show_item{
+    margin: 0;
+}
+
+}
+.img-show-parent .image_show_item{ 
+    position: relative; 
+ }
+
+ h2 { 
+    color: #fff;
+    top: 200px; 
+    left: 0; 
+    width: 100%; 
+ }
+.img-show-parent .imglabel {
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    left: 15px;
+    z-index: 1;
+    max-height: calc(100% - 15px);
+    overflow: hidden;
+ }
